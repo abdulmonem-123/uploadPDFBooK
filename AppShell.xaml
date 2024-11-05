@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="uploadPDFBooK.AppShell" 
+
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:uploadPDFBooK" FlyoutBackgroundColor="LightSkyBlue"
+    Shell.FlyoutBehavior="Disabled" 
+    Title="uploadPDFBooK" 
+ FlyoutHeaderBehavior="CollapseOnScroll"
+    Shell.TabBarBackgroundColor="White"
+    Shell.TabBarTitleColor="Blue"
+    Shell.TabBarUnselectedColor="Black"
+    Shell.TabBarForegroundColor="Blue" >     <!-- لون الأيقونات غير المحددة -->
+
+    
+    
+     
+
+
+
+
+
+    <TabBar >
+
+        <ShellContent    Icon="homestuck" 
+            Title="الصفحة الرئسية " 
+                
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+
+        <ShellContent Icon="user" 
+     Title="تسجيل الدخول "
+                      
+         
+ Route="LoginPage" ContentTemplate="{DataTemplate local:LoginPage}" />
+
+
+        <ShellContent Icon="book" 
+    Title="المقرارت والمناهج  الدراسية "
+        
+ContentTemplate="{DataTemplate local:PDFView}"
+Route="PDFView" />
+
+
+    </TabBar>
+
+ 
+        
+
+
+
+
+
+</Shell>
